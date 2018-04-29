@@ -510,7 +510,7 @@ namespace SentenalProto_1
                 // Output gesture name to GUI
                 GestureName.Text = detectedGestureName;
 
-                if (result.Confidence < 0.4f) return;
+                if (result.Confidence < 0.7f) return;
 
                 // if confidence over 0.4 change gesture name in GUI to green
                 GestureName.Foreground = new SolidColorBrush(Colors.Green);
